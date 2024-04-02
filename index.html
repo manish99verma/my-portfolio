@@ -14,10 +14,10 @@
 		rel="stylesheet">
 
 	<!-- title of site -->
-	<title>Manish</title>
+	<title>Manish - Android Developer</title>
 
 	<!-- For favicon png -->
-	<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png" />
+	<link rel="shortcut icon" type="image/icon" href="assets/logo/android.png" />
 
 	<!--font-awesome.min.css-->
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -177,7 +177,7 @@
 					</div>
 					<div class="col-sm-offset-1 col-sm-5">
 						<div class="single-about-img">
-							<img src="assets/images/about/profile_image.jpg" alt="profile_image">
+							<img src="assets/images/about/my_dp.png" alt="profile_image">
 							<div class="about-list-icon">
 								<ul>
 									<li>
@@ -546,8 +546,15 @@
 									</div><!--/.row-->
 									<div class="row">
 										<div class="col-sm-12">
-											<div class="single-contact-btn">
-												<a class="contact-btn" href="#" role="button">submit</a>
+											<div class="form-group">
+												<p class="error-message-invisible" id="error-message"></p>
+											</div>
+										</div><!--/.col-->
+									</div><!--/.row-->
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="single-contact-btn" onclick="sendMessage()">
+												<a class="contact-btn" role="button">submit</a>
 											</div><!--/.single-single-contact-btn-->
 										</div><!--/.col-->
 									</div><!--/.row-->
@@ -597,6 +604,7 @@
 		</div><!--/.container-->
 
 	</section><!--/.contact-->
+
 	<!--contact end -->
 
 	<!--footer-copyright start-->
@@ -604,7 +612,7 @@
 		<div class="container">
 			<div class="hm-footer-copyright text-center">
 				<p>
-					&copy; copyright 2024 Manish Kumar Verma
+					&copy; 2024 Manish Kumar Verma. All rights reserved.
 				</p><!--/p-->
 			</div><!--/.text-center-->
 		</div><!--/.container-->
@@ -655,6 +663,9 @@
 	<!--Custom JS-->
 	<script src="assets/js/custom.js"></script>
 
+	<!--Firebase-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+	<script src="mail.js"></script>
 </body>
 
 </html>
